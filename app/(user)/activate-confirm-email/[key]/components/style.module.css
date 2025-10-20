@@ -1,0 +1,15 @@
+.container {
+  /* @apply flex px-8 py-4 justify-center items-center bg-blue-800 rounded-xl text-4xl font-semibold; */
+  display: flex;
+  padding-left: 2rem; /* px-8 = 2rem */
+  padding-right: 2rem;
+  padding-top: 1rem; /* py-4 = 1rem */
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e40af; /* bg-blue-800 */
+  border-radius: 0.75rem; /* rounded-xl */
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 600; /* font-semibold */
+  color: #f3f4f6; /* gray-100 */
+}
