@@ -10,7 +10,7 @@ type PropsType = {
 export function CardProductComponent({title, image, price, onClick}: PropsType) {
   return (
     <Card
-      className="max-w-sm cursor-pointer"
+      className="w-[260px] cursor-pointer shadow-md hover:shadow-lg transition-all duration-300 rounded-xl"
       imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
       imgSrc={image}
       onClick={onClick}

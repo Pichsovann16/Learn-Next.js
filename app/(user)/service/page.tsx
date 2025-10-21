@@ -15,7 +15,7 @@ export default function Service() {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div className="h-screen flex flex-wrap justify-center gap-2.5">
+    <div className="h-screen flex flex-wrap justify-center gap-4.5 my-3">
       {products.map((product: { id: number; title: string; image: string; price: number }, index) => (
         <CardProductComponent
           onClick={() => router.push(`/service/${product.id}`)}

@@ -11,7 +11,7 @@ export default function CardProductDetails({
   description,
 }: PropsType) {
   return (
-    <Card className="max-w-sm" imgSrc={image} horizontal>
+    <Card className="max-w-xs text-justify" imgSrc={image} horizontal>
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         {title}
       </h5>
