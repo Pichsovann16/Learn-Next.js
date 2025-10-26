@@ -9,3 +9,6 @@ body {
 h1 {
   font-family: var(--font-local-custom-font) !important;
 }
+.none-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
