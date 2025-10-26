@@ -1,6 +1,6 @@
 "use client";
 import { ProductType } from "@/lib/definition";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DataTable, { TableColumn } from "react-data-table-component";
 import { Modal, ModalBody, ModalHeader } from "flowbite-react";
 import Image from "next/image";
