@@ -1,6 +1,6 @@
 "use client";
 import { ProductType } from "@/lib/definition";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import DataTable, { TableColumn } from "react-data-table-component";
 import { Modal, ModalBody, ModalHeader } from "flowbite-react";
 import Image from "next/image";
@@ -41,8 +41,8 @@ export default function Dashboard() {
     },
     {
       name: "Image",
-      selector: (row): any => (
-        <img className="w-16 h-16" src={row.image} alt={row.image} />
+      cell: (row) => (
+        <Image className="w-16 h-16" src={row.image} alt={row.image} width={64} height={64} />
       ),
     },
     {
@@ -52,7 +52,7 @@ export default function Dashboard() {
     },
     {
       name: "Actions",
-      selector: (row): any => (
+      cell: (row) => (
         <div>
           <button
             onClick={() => handleViewProduct(row)}
@@ -67,8 +67,6 @@ export default function Dashboard() {
     },
   ];
 
-    const [imagePlaceholder, setImagePlaceholder] = useState<string>("https://static.vecteezy.com/system/resources/previews/016/916/479/non_2x/placeholder-icon-design-free-vector.jpg"
-   );
   return (
     <main className="h-screen">
       <DataTable
